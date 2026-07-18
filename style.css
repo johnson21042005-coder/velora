@@ -6163,3 +6163,347 @@ html[data-theme="dark"] .premium-footer {
     }
 
 }
+
+
+/* =========================================================
+   VELORA — FINAL MOBILE RESPONSIVE PATCH
+   Paste at the VERY END of Style.css
+========================================================= */
+
+@media (max-width: 800px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* APP */
+    .app-shell {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+        width: min(280px, 84vw);
+        max-width: 100%;
+    }
+
+    /* MOBILE HEADER */
+    .mobile-topbar {
+        width: 100%;
+        height: 60px;
+        padding: 0 16px;
+    }
+
+    /* MAIN CONTENT */
+    .app-content {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        padding: 22px 16px 40px;
+        overflow-x: hidden;
+    }
+
+    .app-page {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* PAGE HEADER */
+    .page-header {
+        width: 100%;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .page-header h1 {
+        font-size: clamp(28px, 8vw, 36px);
+        line-height: 1.08;
+        letter-spacing: -1.5px;
+    }
+
+    .page-header p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    /* DASHBOARD GRIDS */
+    .dashboard-kpi-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .dashboard-main-grid,
+    .dashboard-secondary-grid,
+    .three-card-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    /* CARDS */
+    .kpi-card,
+    .content-card,
+    .settings-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .kpi-card {
+        padding: 17px;
+    }
+
+    .content-card {
+        padding: 18px;
+    }
+
+    /* CHART */
+    .chart-container {
+        width: 100%;
+        height: 220px;
+        min-width: 0;
+    }
+
+    canvas {
+        max-width: 100% !important;
+    }
+
+    /* CARD HEADINGS */
+    .card-heading {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    /* HABIT TRACKER */
+    .tracker-topbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .tracker-navigation {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .tracker-table-wrapper {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* CONTROLS */
+    .segmented-control,
+    .growth-plan-selector {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    /* HISTORY */
+    .history-calendar {
+        gap: 4px;
+    }
+
+    .history-calendar > * {
+        min-height: 65px;
+        padding: 6px;
+    }
+
+    /* PROGRESS PHOTOS */
+    .progress-photo-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* LANDING PAGE */
+    .premium-hero {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero-dashboard-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .premium-dashboard-preview {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* ONBOARDING */
+    .onboarding-shell {
+        max-width: 100%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE — 520px AND BELOW
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .app-content {
+        padding:
+            18px 12px 35px;
+    }
+
+    /* KPI CARDS */
+    .dashboard-kpi-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap:
+            8px;
+    }
+
+    .kpi-card {
+        padding:
+            14px 12px;
+
+        border-radius:
+            15px;
+    }
+
+    .kpi-card strong {
+        font-size:
+            22px;
+    }
+
+    .kpi-card small {
+        font-size:
+            7px;
+    }
+
+    /* CONTENT CARDS */
+    .content-card,
+    .settings-card {
+        border-radius:
+            16px;
+    }
+
+    .content-card {
+        padding:
+            15px;
+    }
+
+    /* PAGE TITLE */
+    .page-header h1 {
+        font-size:
+            29px;
+    }
+
+    /* CHART */
+    .chart-container {
+        height:
+            200px;
+    }
+
+    /* PROGRESS RING */
+    .progress-ring {
+        width:
+            125px;
+
+        height:
+            125px;
+    }
+
+    .progress-ring > div {
+        width:
+            95px;
+
+        height:
+            95px;
+    }
+
+    /* HISTORY CALENDAR */
+    .history-calendar {
+        gap:
+            3px;
+    }
+
+    .history-calendar > * {
+        min-height:
+            52px;
+
+        padding:
+            5px 3px;
+
+        border-radius:
+            8px;
+
+        font-size:
+            9px;
+    }
+
+    /* PHOTOS */
+    .progress-photo-gallery {
+        grid-template-columns:
+            1fr;
+    }
+
+    /* BUTTONS */
+    .primary-btn,
+    .secondary-btn,
+    .small-action-btn {
+        max-width:
+            100%;
+    }
+
+    /* LANDING HERO */
+    .premium-hero-title {
+        font-size:
+            clamp(36px, 11vw, 48px);
+
+        line-height:
+            1.04;
+
+        letter-spacing:
+            -2px;
+    }
+
+    .premium-hero-description {
+        max-width:
+            340px;
+    }
+
+    /* DASHBOARD PREVIEW */
+    .preview-content {
+        padding:
+            14px;
+    }
+
+    .preview-stat-card {
+        padding:
+            14px;
+    }
+
+    /* AUTH */
+    .auth-card {
+        width:
+            100%;
+
+        padding:
+            25px 18px;
+    }
+
+    /* ONBOARDING */
+    .onboarding-step h1 {
+        font-size:
+            34px;
+
+        letter-spacing:
+            -1.5px;
+    }
+
+    .large-input-field input,
+    .large-input-field textarea {
+        font-size:
+            20px;
+    }
+}
